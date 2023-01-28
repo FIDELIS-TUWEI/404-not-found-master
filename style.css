@@ -14,7 +14,7 @@
     --secondary-font: 'Inconsolata', monospace;;
 
     --primary-fs: 3rem;
-    --secondary-font: 1.5rem;
+    --secondary-fs: 1.5rem;
 
     --primary-text-color: #333333;
     --secondary-text-color: #4F4F4F;
@@ -35,8 +35,9 @@ img {
 
 .logo--title {
     height: 35px;
-    font-size: var(--secondary-font);
+    font-size: var(--secondary-fs);
     padding: 20px 0;
+    font-family: var(--secondary-font);
 }
 
 .container {
@@ -52,7 +53,7 @@ img {
     letter-spacing: -0.035em;
     line-height: 71px;
     max-width: 100%;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 .error--message {
@@ -60,7 +61,7 @@ img {
     font-weight: var(--secondary-fw);
     font-size: 1.125rem;
     line-height: 27px;
-    letter-spacing: 0.035em;
+    letter-spacing: -0.035em;
     color: var(--secondary-text-color);
 }
 
@@ -75,4 +76,50 @@ img {
     letter-spacing: -0.035em;
     padding: 10px;
     margin: 50px 0;
+}
+
+.backBtn:hover {
+    transform: scale(1.2);
+}
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        border: 3px solid pink;
+        display: flex;
+        flex-direction: row;
+        height: 70vh;
+        gap: 40px;
+        margin: auto;
+        width: 65%;
+        max-width: 100%;
+    }
+    .hero--Image {
+        width: 300px;
+        height: 250px;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+    .logo--title {
+        margin-bottom: 60px;
+    }
+    .backBtn {
+        margin: 40px auto;
+        cursor: pointer;
+    }
+    .backBtn:hover {
+        transform: scale(1.2);
+    }
+    .container--title {
+        margin: auto;
+        letter-spacing: -0.035em;
+        font-size: 2rem;
+        line-height: 50px;
+        max-width: 100%;
+        padding: 60px 0 20px 0;
+    }
+    .error--message {
+        max-width: 100%;
+        letter-spacing: -0.035em;
+    }
 }

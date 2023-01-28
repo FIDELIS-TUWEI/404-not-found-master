@@ -17,7 +17,7 @@ document.body.append(container);
 // Hero Image
 const image = document.createElement('img');
 image.setAttribute('src', 'Scarecrow.png');
-image.className = `Hero--Image`;
+image.className = `hero--Image`;
 container.appendChild(image);
 
 // Text container
