@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: 'Space Mono', monospace;
+    --secondary-font: 'Inconsolata', monospace;;
+
+    --primary-fs: 3rem;
+    --secondary-font: 1.5rem;
+
+    --primary-text-color: #333333;
+    --secondary-text-color: #4F4F4F;
+
+    --primary-fw: 700;
+    --secondary-fw: 400;
+}
+
+body {
+    background: #FFFFFF;
+    margin: auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo--title {
+    height: 35px;
+    border: 2px solid red;
+    font-size: var(--secondary-font);
+}
+
+.container {
+    border: 3px solid pink;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.container--title {
+    font-family: var(--primary-font);
+    font-weight: var(--primary-fw);
+    font-size: var(--primary-fs);
+    color: var(--primary-text-color);
+    border: 1px solid blue;
+    letter-spacing: -0.035em;
+    line-height: 71px;
+    max-width: 100%;
+    margin: 50px 0;
+}
+
+.error--message {
+    border: 2px solid gold;
+    font-family: var(--primary-font);
+    font-weight: var(--secondary-fw);
+    font-size: 1.125rem;
+    line-height: 27px;
+    letter-spacing: 0.035em;
+    color: var(--secondary-text-color);
+}
+
+.backBtn {
+    background-color: var(--primary-text-color);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 21px;
+    font-weight: var(--primary-fw);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    letter-spacing: -0.035em;
+    padding: 10px;
+    margin: 50px 0;
+}
