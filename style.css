@@ -85,7 +85,6 @@ img {
 
 @media screen and (min-width: 900px) {
     .container {
-        border: 3px solid pink;
         display: flex;
         flex-direction: row;
         height: 70vh;
